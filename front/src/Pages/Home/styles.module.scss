@@ -1,0 +1,15 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 18em;
+}
+
+@media screen and (max-width: 1850px) {
+  .logo {
+    width: 14em;
+  }
+}

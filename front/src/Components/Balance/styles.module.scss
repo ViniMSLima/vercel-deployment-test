@@ -1,0 +1,66 @@
+.balance {
+  width: auto;
+  height: 5em;
+  margin: 0 0.1em 0 0.3em;
+  position: relative;
+}
+
+.contorno {
+  position: relative;
+   display: inline-block;
+   margin: 0.7em 0 1.9em 0;
+}
+
+.hitbox1 {
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  // background-color: blue;
+  z-index: 2;
+  transform: scaleY(-1);
+}
+
+.hitbox1 img {
+  transform: scaleY(-1);
+}
+
+.hitbox2 {
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  // background-color: red;
+  z-index: 2;
+  transform: scaleY(-1);
+}
+
+.hitbox2 img {
+  transform: scaleY(-1);
+}
+
+.pyramidRow {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.1em; 
+}
+
+.forms {
+  margin: 0 0.02em;
+  width: 0.25em;
+  height: auto;
+  order: -1;
+}
+
+.figureContainer {
+  position: relative;
+  bottom: 0.3em;
+}
+
+.group {
+  height: 0.3em;
+}
+
+@media screen and (max-width: 1400px) {
+  .contorno {
+    margin: 0;
+  }
+}

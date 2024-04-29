@@ -1,0 +1,13 @@
+.card {
+    background-color: #E3E3E3;
+    width: 100%;
+    padding: 0.1em 0.3em;
+    border-radius: 15px;
+    border: solid 2px hsla(0, 0, 0, 0.26);
+}
+
+@media screen and (max-width: 1500px) {
+    .card {
+        height: 100%;
+    }
+}

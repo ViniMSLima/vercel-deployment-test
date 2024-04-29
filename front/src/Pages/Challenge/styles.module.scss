@@ -1,0 +1,72 @@
+.cont {
+    display: flex;
+    flex-direction: row;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: "League Gothic", sans-serif;
+    font-size: 5em;
+}
+
+.row {
+    margin-top: 0.5em;
+    width: 100%;
+}
+
+.cardInputs {
+    padding-inline: 2em;
+    height: auto;
+}
+
+.inputCol {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    font-family: "League Gothic", sans-serif;
+    font-size: 5em;
+}
+
+.align {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.btnDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+}
+
+.button {
+    width: 52%;
+    height: 80%;
+    padding: 1em;
+    font-size: 200%;
+    background-color: #007BC0;
+    color: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "League Gothic", sans-serif;
+}
+
+.btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 1850px) {
+    .title {
+        font-size: 3.2em;
+    }
+}
