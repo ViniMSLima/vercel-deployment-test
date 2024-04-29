@@ -15,7 +15,8 @@ export default function ExcelGenerator() {
         try {
             //IP do senai
             // const res = await axios.get('http://10.196.20.101:8080/api/getplayers');
-            const res = await axios.get('http://localhost:8080/api/getplayers');
+            // const res = await axios.get('http://localhost:8080/api/getplayers');
+            const res = await axios.get('https://vercel-deployment-test-server.vercel.app/api/getplayers');
             setPlayersData(res.data.players);
             setSortedData(res.data.players);
         } catch (error) {

@@ -144,8 +144,12 @@ export default function Challenge() {
       //   "http://10.196.20.101:8080/api/postplayer",
       //   playerInfo
       //   );
+      // await axios.post(
+      //   "http://localhost:8080/api/postplayer",
+      //   playerInfo
+      // );
       await axios.post(
-        "http://localhost:8080/api/postplayer",
+        "https://vercel-deployment-test-server.vercel.app/api/postplayer",
         playerInfo
       );
     } catch (error) {
