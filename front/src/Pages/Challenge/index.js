@@ -17,7 +17,7 @@ import pentagono from "../../Img/formas/pentagono.png";
 import estrela from "../../Img/formas/star.png";
 
 import axios from "axios";
-import { apiEquiblocks } from "/Users/aluno/Desktop/vercel-deployment-test/front/src/api/apiEquiblocks"
+import { apiEquiblocks } from "../../api/apiEquiblocks";
 
 
 import { TimerContext } from "../../Context/timerContext";
