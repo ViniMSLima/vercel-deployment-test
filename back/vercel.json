@@ -1,5 +1,9 @@
 {
     "version": 2,
     "builds": [{ "src": "index.js", "use": "@vercel/node" }],
-    "routes": [{ "src": "/api/getplayers", "dest": "/"}]
+    "routes": [
+        { "src": "/", "dest": "/" },
+        { "src": "/api/getplayers", "dest": "/" },
+        { "src": "/api/postplayer", "dest": "/" }
+      ]
 }
