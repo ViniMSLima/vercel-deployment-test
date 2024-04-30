@@ -21,7 +21,10 @@ connectToDB(); // Call the function to connect to MongoDB
 
 app.use(
   cors({
-    origin: "https://vercel-deployment-test-phi.vercel.app",
+    origin: "*",
+    methods: "GET,POST,DELETE",
+    preflightContinue: false,
+    optionsSuccessStatus: 204
   })
 );
 

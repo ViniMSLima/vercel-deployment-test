@@ -17,6 +17,8 @@ import pentagono from "../../Img/formas/pentagono.png";
 import estrela from "../../Img/formas/star.png";
 
 import axios from "axios";
+import { apiEquiblocks } from "/Users/aluno/Desktop/vercel-deployment-test/front/src/api/apiEquiblocks"
+
 
 import { TimerContext } from "../../Context/timerContext";
 import { PesoContext } from "../../Context/pesoContext";
@@ -148,10 +150,24 @@ export default function Challenge() {
       //   "http://localhost:8080/api/postplayer",
       //   playerInfo
       // );
-      await axios.post(
-        "https://vercel-deployment-test-server.vercel.app/api/postplayer",
-        playerInfo
-      );
+      // await axios.post(
+      //   "/postplayer",
+      //   playerInfo
+      // );
+
+      apiEquiblocks.post(`/postPlayer`, playerInfo).then((response) => {
+        if (!response.data.results) {
+          console.log("Vazio")
+        }
+        else {
+          console.log(response.data.results)
+        }
+      }).catch((error) => {
+        console.log("Deu freiada na zorba")
+        console.error(error)
+      })
+
+
     } catch (error) {
       console.error("Error fetching game data:", error);
     }
@@ -183,7 +199,7 @@ export default function Challenge() {
 
     if (count > 1)
       return false;
-    else 
+    else
       return true;
   }
 
