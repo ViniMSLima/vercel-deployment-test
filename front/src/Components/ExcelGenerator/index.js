@@ -61,7 +61,7 @@ export default function ExcelGenerator() {
                     console.log(response.data.results)
                 }
             }).catch((error) => {
-                console.log("Deu freiada na zorba")
+                console.log("Erro")
                 console.error(error)
             })
 
