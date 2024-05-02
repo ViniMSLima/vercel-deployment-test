@@ -57,7 +57,6 @@ class PlayerController {
 
 module.exports = PlayerController;
 
-
 // {
 //     "nome": "nome",
 //     "data": "data",

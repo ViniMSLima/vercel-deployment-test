@@ -5,6 +5,6 @@
         { "src": "/", "dest": "/" },
         { "src": "/api/getplayers", "dest": "/" },
         { "src": "/api/postplayer", "dest": "/" },
-        { "src": "/api/deleteplayer", "dest": "/" }
+        { "src": "/api/deleteplayers", "dest": "/" }
     ]
 }
